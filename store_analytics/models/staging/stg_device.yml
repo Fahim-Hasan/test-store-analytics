@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_device
+    description: Device source model
+    columns:
+      - name: device_id
+        description: Identifier for device id
+        data_tests:
+          - not_null
+          - unique
+      - name: device_type
+        description: Device category for each of the device
+        data_tests:
+          - not_null
+# Here we can add all the description and test for the output columns of this model

@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_store
+    description: Store information with customer id
+    columns:
+      - name: store_id
+        description: Identifier for store
+        data_tests:
+          - not_null
+          - unique
+      - name: store_name
+        description: Store basic information (name)
+        data_tests:
+          - not_null
+# Here we can add all the description and test for the output columns of this model

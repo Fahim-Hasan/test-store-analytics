@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: fct_transactions
+    description: Fact model for only each transactions with foreign keys
+    columns:
+      - name: transaction_id
+        description: Unique identifier for transaction
+        data_tests:
+          - not_null
+          - unique
+
+# Here we can add all the description and test for the output columns of this model

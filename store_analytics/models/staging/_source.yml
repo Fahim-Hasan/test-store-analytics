@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: transaction_information
+    description: "source tables containing transactiondetails"
+    database: transaction_details
+    schema: test
+    tables:
+      - name: transaction
+        description: Transaction table with product info
+
+      - name: device
+        description: Device table with device type
+
+      - name: store
+        description: Store related information table

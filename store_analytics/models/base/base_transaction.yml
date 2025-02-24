@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: base_transaction
+    description: Base model for combining transaction with store and device
+    columns:
+      - name: transaction_id
+        description: Unique identifier for transaction
+        data_tests:
+          - not_null
+          - unique
+
+# Here we can add all the description and test for the output columns of this model
